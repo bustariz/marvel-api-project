@@ -1,0 +1,122 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marvel Comics Data</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+                    <!-- navigation menu  -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand font-weight-bold bg-danger text-light p-3" href="#">Marvel Comics</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item  dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Plots
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="comic-event-correlation.html">Comic vs Event Correlation</a>
+                            <a class="dropdown-item" href="comic-series-correlation.html">Comic vs Series Correlation</a>
+                            <a class="dropdown-item" href="top-ten-event.html">Top 10 by Events</a>
+                            <a class="dropdown-item" href="top-ten-series.html">Top 10 by Series</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- container -->
+        <div class="container-fluid bg-light"> 
+            <div class="row card-group p-5">
+                <div class="col-md-6">
+                    <div class="row card">
+                        <div class="card-body">
+                            <h1 class="card-title text-danger mt-4">Summary: Most Popular Characters</h1>
+                            <hr>
+                            <img src="../charts/top_ten_by_comic.png" class=" col-md-12 card-img float-left flex-shrink-1" alt="...">
+                            <p class=" col-md-12 card-text d-flex align-content-around flex-wrap">
+                                The purpose of this project was to analyze the popularity of Marvel Comics characters. 
+                                Using Marvels API, we gathered comicbook, comicbook series and comicbook event data by character.
+                                We used matplotlib to create visualizations to show the relationship between different content marvel creates.
+                                This site provides the data and visualizations created and descriptions of each.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-danger text-weight-bold mt-4">Visualizations</h2>
+                            <hr>
+                            <div class="card-columns row">
+                                <div class="card col-md-6 border-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-danger text-center">Comics vs Events Correlation</h3>
+                                        <a href="comic-event-correlation.html">
+                                            <img class="card-img" src="../charts/comic_event_correlation.png" alt="...">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card col-md-6 border-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-danger text-center">Comics vs Series Correlation</h3>
+                                        <a href="comic-series-correlation.html">
+                                            <img class="card-img" src="../charts/comic_series_correlation.png" alt="...">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card col-md-6 border-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-danger text-center">Top Events</h3>
+                                        <a href="top-ten-event.html">
+                                            <img class="card-img" src="../charts/top_ten_by_event.png" alt="...">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card col-md-6 border-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-danger text-center">Top Series</h3>
+                                        <a href="top-ten-series.html">
+                                            <img class="card-img" src="../charts/top_ten_by_series.png" alt="...">
+                                        </a>
+                                    </div>
+                                </div>                                                                                                                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer of the page  -->
+        <footer>
+            <div class="text-center fixed bottom bg-dark text-light p-2">
+                <p>
+                    © Copyright Coding Data Bootcamp 2020
+                    <span class="border-top border-info"></span>
+                </p>
+            </div>
+        </footer>   
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
