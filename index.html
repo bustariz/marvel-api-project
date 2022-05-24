@@ -1,4 +1,6 @@
-<html lang="en">
+
+  
+  <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,67 +42,69 @@
         </nav>
         
         <!-- container -->
-        <div class="container-fluid bg-light"> 
-            <div class="row card-group p-5">
-                <div class="col-md-6">
-                    <div class="row card">
-                        <div class="card-body">
-                            <h1 class="card-title text-danger mt-4">Summary: Most Popular Characters</h1>
-                            <hr>
-                            <img src="charts/top_ten_by_comic.png" class=" col-md-12 card-img float-left flex-shrink-1" alt="...">
-                            <p class=" col-md-12 card-text d-flex align-content-around flex-wrap">
-                                The purpose of this project was to analyze the popularity of Marvel Comics characters. 
-                                Using Marvels API, we gathered comicbook, comicbook series and comicbook event data by character.
-                                We used matplotlib to create visualizations to show the relationship between different content marvel creates.
-                                This site provides the data and visualizations created and descriptions of each.
-                            </p>
-                        </div>
+        <div class="container-fluid bg-light pb-5 pt-5"> 
+            <div class="row">
+                <!-- summary card -->
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                        <!-- title  -->
+                        <h2 class="card-title text-danger mt-4">Summary: Most Popular Characters</h2>
+                        <hr>
+                        <img src="charts/top_ten_by_comic.png" class=" col-md-12 card-img float-left flex-shrink-1" alt="...">
+                        <p class=" col-md-12 card-text d-flex align-content-around flex-wrap">
+                            The purpose of this project was to analyze the popularity of Marvel Comics characters. 
+                            Using Marvels API, we gathered comicbook, comicbook series and comicbook event data by character.
+                            We used matplotlib to create visualizations to show the relationship between different content marvel creates.
+                            This site provides the data and visualizations created and descriptions of each.
+                        </p>
                     </div>
+                  </div>
                 </div>
-                
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title text-danger text-weight-bold mt-4">Visualizations</h2>
-                            <hr>
-                            <div class="card-columns row">
-                                <div class="card col-md-6 border-0">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-danger text-center">Comics vs Events Correlation</h3>
-                                        <a href="comic-event-correlation.html">
-                                            <img class="card-img" src="charts/comic_event_correlation.png" alt="...">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card col-md-6 border-0">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-danger text-center">Comics vs Series Correlation</h3>
-                                        <a href="comic-series-correlation.html">
-                                            <img class="card-img" src="charts/comic_series_correlation.png" alt="...">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card col-md-6 border-0">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-danger text-center">Top Events</h3>
-                                        <a href="top-ten-event.html">
-                                            <img class="card-img" src="charts/top_ten_by_event.png" alt="...">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card col-md-6 border-0">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-danger text-center">Top Series</h3>
-                                        <a href="top-ten-series.html">
-                                            <img class="card-img" src="charts/top_ten_by_series.png" alt="...">
-                                        </a>
-                                    </div>
-                                </div>                                                                                                                                
-                            </div>
+                <!-- visualizations card -->
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-danger text-weight-bold mt-4">Visualizations</h2>
+                        <hr>
+                      <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                          <div class="card">
+                            <h5 class="card-title text-danger text-center">Comics vs Events Correlation</h5>
+                            <a href="comic-event-correlation.html">
+                                <img class="card-img" src="charts/comic_event_correlation.png" alt="...">
+                            </a>
+                          </div>
                         </div>
+                        <div class="col pb-3">
+                          <div class="card">
+                            <h5 class="card-title text-danger text-center">Comics vs Series Correlation</h5>
+                            <a href="comic-series-correlation.html">
+                                <img class="card-img" src="charts/comic_series_correlation.png" alt="...">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <h5 class="card-title text-danger text-center">Top Events</h5>
+                            <a href="top-ten-event.html">
+                                <img class="card-img" src="charts/top_ten_by_event.png" alt="...">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card">
+                            <h5 class="card-title text-danger text-center">Top Series</h5>
+                            <a href="top-ten-series.html">
+                                <img class="card-img" src="charts/top_ten_by_series.png" alt="...">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
+              </div>
         </div>
 
         <!-- footer of the page  -->
